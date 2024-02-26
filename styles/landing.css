@@ -19,8 +19,7 @@ body {
 
 .landing__middle {
     background: url(../img/rg-bat_figure.png) no-repeat, linear-gradient(90deg, rgb(231, 237, 237) 35%, rgb(208, 209, 211) 80%);
-    ;
-
+    padding-bottom: 150px;
 }
 
 
@@ -181,7 +180,16 @@ body {
 .arrow {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
+
+}
+
+.arrow button {
+    border: none;
+    background: local;
+    cursor: pointer;
+    position: sticky;
+    bottom: 10px;
 }
 
 /*FOOTER*/
@@ -196,23 +204,49 @@ footer {
     margin: 0 auto;
     align-items: center;
     padding: 40px 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .footer__contacts {
-    display: flex;
     align-items: center;
     font-size: 41px;
     line-height: 40px;
     display: grid;
-    gap: 40px;
+    gap: 25px;
+}
+
+.footer__contacts h1 {
+    font-weight: 100;
+    font-size: 60px;
 }
 
 .footer__contacts img {
     margin-right: 20px;
 }
 
-.contacts__title {
-    font-size: 30px;
+
+.footer__contacts-geo span {
+    font-size: 35px;
+    margin-left: 210px;
+}
+
+.footer__logo {
+    display: grid;
+    grid-template-rows: auto;
+    justify-self: right;
+    gap: 150px;
+
+}
+
+.footer__logo img {
+
+    margin-left: 220px;
+}
+
+.index {
+    font-size: 41px;
+    line-height: 40px;
 }
 
 /*Adaptive*/
