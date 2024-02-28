@@ -181,15 +181,12 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-
 }
 
 .arrow button {
     border: none;
     background: local;
     cursor: pointer;
-    position: sticky;
-    bottom: 10px;
 }
 
 /*FOOTER*/
@@ -236,11 +233,9 @@ footer {
     grid-template-rows: auto;
     justify-self: right;
     gap: 150px;
-
 }
 
 .footer__logo img {
-
     margin-left: 220px;
 }
 
