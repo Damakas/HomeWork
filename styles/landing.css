@@ -22,6 +22,9 @@ body {
     padding-bottom: 150px;
 }
 
+.landing__form {
+    background: linear-gradient(90deg, rgb(231, 237, 237) 35%, rgb(208, 209, 211) 80%);
+}
 
 
 /*Fonts*/
@@ -188,6 +191,47 @@ body {
     background: local;
     cursor: pointer;
 }
+
+/*FORM*/
+.form__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 24px;
+}
+
+.form__container {
+    background-color: #838485;
+    width: 700px;
+    height: 800px;
+}
+
+.form__title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Mfred', sans-serif;
+    font-size: 50px;
+    line-height: 150px;
+    font-weight: 100;
+    color: #fafafa;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 0 150px;
+}
+
+.box__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 70px 75px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
 
 /*FOOTER*/
 footer {
