@@ -66,19 +66,39 @@
                     <label for="NOM">NOM</label>
                     <input type="NOM" name="NOM" id="NOM">
                 </div>
-                <div class="field">
+                <div class="field reverse-text">
                     <label for="email">E-MAIL</label>
                     <input type="email" name="email" id="email">
                 </div>
                 <div class="field">
                     <label for="telephone">TELEPHONE</label>
-                    <input type="telephone" name="telephone" id="telephone">
+                    <input type="tel" name="tel" id="telephone">
                 </div>
-                <div class="field">
+                <div class="field reverse-text">
                     <label for="message">MESSAGE</label>
                     <input type="message" name="MESSAGE" id="message">
                 </div>
+                <div class="agreement">
+                    <div class="field__disgree">
+                        <input type="radio" name="agreement" id="disgree">
+                        <label for="field__disgree">
+                            En cochant cette case,vous acceptez de recevoir nos
+                            communica- <br>tions (newsletter,offre promotionelle<span style="letter-spacing: 100px;">
+                            </span>...)
+                        </label>
+                    </div>
+                    <div class="field__agree">
+                        <input type="radio" name="agreement" id="agree">
+                        En cochant cette case,vous acceptez de recevoir des <br>comunications de nos parenaires
+                        (newsletter , offre promotionelle ...)
+                    </div>
+                </div>
             </form>
+            <div class="button__box">
+                <button class="button__form">RECEVEZ VOTRE DEVIS
+                    <img style="margin-left: 30px;" src="./img/triangle.png" alt="">
+                </button>
+            </div>
         </div>
 </section>
 <section class="landing__middle">

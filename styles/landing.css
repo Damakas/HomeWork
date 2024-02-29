@@ -24,6 +24,7 @@ body {
 
 .landing__form {
     background: linear-gradient(90deg, rgb(231, 237, 237) 35%, rgb(208, 209, 211) 80%);
+    height: 100vh;
 }
 
 
@@ -224,12 +225,68 @@ body {
 .box__form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
+    justify-items: center;
     padding: 70px 75px;
 }
 
 .field label {
     display: block;
     margin-bottom: 5px;
+    font-family: 'Mfred', sans-serif;
+    font-size: 30px;
+    color: #f7941d;
+}
+
+.field input {
+    padding: 10px 30px;
+}
+
+.reverse-text {
+    text-align: right;
+}
+
+#disgree,
+#agree {
+    transform: scale(2);
+}
+
+.agreement {
+    width: 200px;
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-indent: -25px;
+}
+
+.agreement label {
+    margin: 0;
+    padding: 0;
+}
+
+.field__agree {
+    margin-top: 20px;
+}
+
+.button__box {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.button__form {
+    display: flex;
+    align-items: center;
+    background: #f7941d;
+    font-family: 'Mfred', sans-serif;
+    color: #fafafa;
+    padding: 15px 40px 10px 80px;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
 }
 
 
