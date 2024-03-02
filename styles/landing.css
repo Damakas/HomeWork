@@ -10,21 +10,25 @@ body {
 }
 
 .landing__top {
+    display: grid;
     background-image: url(../img/rg-bat_BG.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    height: 100vh;
+    min-height: 100vh;
+    margin-bottom: -20px;
 }
 
 .landing__middle {
     background: url(../img/rg-bat_figure.png) no-repeat, linear-gradient(90deg, rgb(231, 237, 237) 35%, rgb(208, 209, 211) 80%);
     padding-bottom: 150px;
+    min-height: 100vh;
+    display: grid;
 }
 
 .landing__form {
     background: linear-gradient(90deg, rgb(231, 237, 237) 35%, rgb(208, 209, 211) 80%);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -85,7 +89,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 40px 24px;
-
 }
 
 .hero {
@@ -93,7 +96,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 80px;
     margin: 0;
-    margin-top: 250px;
+    margin-bottom: 50px;
 }
 
 .hero-disc {
@@ -101,7 +104,7 @@ body {
     width: 350px;
     height: 290px;
     color: #fafafa;
-    margin-top: 20px;
+
 }
 
 .hero-text {
@@ -170,7 +173,6 @@ body {
 .middle__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     justify-content: space-between;
     gap: 30px;
 }
@@ -255,7 +257,7 @@ body {
 .agreement {
     width: 200px;
     white-space: nowrap;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 25px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -347,9 +349,13 @@ footer {
 
 /*Adaptive*/
 @media(max-width:1450px) {
+    .landing__top {
+        justify-content: center;
+        background-position: center;
+    }
+
     .hero {
         gap: 30px;
-
     }
 
     .header__fixed {
@@ -357,6 +363,13 @@ footer {
         padding-right: 100px;
     }
 
+    .middle__container {
+        gap: 10px;
+    }
+
+    .footer__wrapper {
+        padding: 20px;
+    }
 }
 
 @media(max-width:1199px) {
@@ -364,11 +377,8 @@ footer {
     .hero {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
-        margin-left: 170px;
-        margin-right: 100px;
-        padding: 0 200px 0 40px;
+        padding: 300px 32px 32px;
     }
-
 
     .hero :nth-child(3) {
         grid-row-start: 2;
@@ -378,6 +388,18 @@ footer {
 
     .header__fixed {
         background-color: rgba(50, 50, 50, 0.6);
+
+    }
+
+    .middle__container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 70px 0 0px;
+    }
+
+    .middle__container :nth-child(9) {
+        grid-row-start: 6;
+        grid-column: span 2;
+        justify-self: center;
     }
 }
 
@@ -386,7 +408,7 @@ footer {
     .hero {
         grid-template-columns: 1fr;
         align-items: center;
-        padding: 0 200px 0 50px;
+
     }
 
     .hero :nth-child(3) {
@@ -396,12 +418,88 @@ footer {
 
 }
 
-
-@media(max-width: 384px) {
-    .hero {
-        padding: 0 200px 0 20px;
+@media(max-width: 840px) {
+    .middle__container {
+        grid-template-columns: 1fr;
+        margin: 0;
     }
 
+    .middle__container :nth-child(9) {
+        grid-row-start: 9;
+        grid-column: span 1;
+        justify-self: left;
+    }
+
+    .landing__middle {
+        padding: 10px;
+
+    }
+
+    .box__form {
+        width: 100%;
+        gap: 10px;
+        padding: 20px 10px;
+    }
+
+
+    .form__container {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .agreement {
+        white-space: normal;
+
+    }
+
+
+    .button__box {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0 20px
+    }
+
+    .footer__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .box__form {
+        grid-template-columns: 1fr;
+    }
+
+    .reverse-text {
+        text-align: left;
+    }
+
+    .footer__contacts-geo span {
+        margin: 0;
+    }
+
+    .footer__logo {
+        justify-self: left;
+        gap: 20px;
+    }
+
+    .footer__logo img {
+        margin: 0px;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 640px) {
+    .hero {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .form__title {
+        border-bottom: 1px solid white;
+        margin: 0 30px;
+    }
+}
+
+@media(max-width: 384px) {
     .hero :nth-child(3) {
         grid-row-start: 1;
         grid-column: span 1;
