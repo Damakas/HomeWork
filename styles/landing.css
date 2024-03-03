@@ -468,8 +468,8 @@ footer {
 
 
     .agreement {
-        white-space: normal;
-
+        white-space: nowrap;
+        margin-right: 250px;
     }
 
 
@@ -514,14 +514,25 @@ footer {
         margin: 0 30px;
     }
 
+    .agreement {
+        white-space: normal;
+        margin: 0;
+    }
+
     .footer__contacts {
         white-space: nowrap;
         font-size: 6vw;
         margin-left: -100px;
+        padding: 0 100px;
+    }
+
+    .footer__contacts img {
+        width: 5vw;
     }
 
     .footer__contacts span {
         font-size: 5vw;
+        white-space: wrap;
     }
 
 }
@@ -539,5 +550,9 @@ footer {
 
     .hero-disc {
         width: 100%;
+    }
+
+    .middle__title span {
+        margin-right: 0;
     }
 }
